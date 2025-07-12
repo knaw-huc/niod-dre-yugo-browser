@@ -34,6 +34,7 @@ services:
 
 
   yugo-browser:
-    image: yugo-browser:latest
+    build:
+      context: ./browser
     ports:
       - '5050:5000'
