@@ -62,6 +62,8 @@ class Indexer:
                 path_id = self.config['index']['id']['path']
                 doc_id = xpproc.evaluate_single(f"{path_id}").get_string_value() 
                 doc = {'id': doc_id}
+                xpproc.declare_variable('id')
+                xpproc.set_parameter('id',proc.make_string_value(doc_id))
                 if self.config["index"]["full_text"]=="yes":
                     val = xpproc.evaluate_single("string-join(//cmd:Components//text()/normalize-space()[.!=''],' ')")
                     if val:
