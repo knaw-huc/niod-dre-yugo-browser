@@ -44,6 +44,6 @@ type="text"
 cardinality="single"
 
 [index.facet.institution]
-path="string(/cmd:CMD/cmd:Components/cmdp:Collection/cmdp:RelationshipArea/cmdp:ToCollectionHoldingInstitution/cmdp:Relationship/cmdp:to)"
+path="doc('http://localhost:1211/app/yugo/action/graph')//collectionHierarchy//collection[@id=$id]/ancestor::institution/@title/string()"
 type="text"
 cardinality="single"
