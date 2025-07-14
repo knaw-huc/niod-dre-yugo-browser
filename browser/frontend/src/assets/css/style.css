@@ -633,7 +633,7 @@ margin-bottom: 20px;
 }
 
 .lang::before {
-    content: " (";
+    content: "\00a0(";
 }
 
 .lang::after {
@@ -644,7 +644,7 @@ margin-bottom: 20px;
 }
 
 .type::before {
-    content: " (";
+    content: "\00a0(";
 }
 
 .type::after {
@@ -656,7 +656,7 @@ margin-bottom: 20px;
 }
 
 .ent::before {
-    content: " (";
+    content: "\00a0(";
 }
 
 .ent::after {
@@ -666,4 +666,17 @@ margin-bottom: 20px;
 a.rel {
     font-weight: normal;
     text-decoration: underline;
+}
+
+span.here {
+    font-weight: bold;
+}
+
+span.here::before {
+    content: 'You\'re here: ';
+}
+
+h3 {
+    font-weight: normal;
+    font-style:italic;
 }
