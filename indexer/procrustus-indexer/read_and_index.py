@@ -7,7 +7,7 @@ import glob
 import jmespath
 import json
 import locale
-locale.setlocale(locale.LC_ALL, 'nl_NL')
+#locale.setlocale(locale.LC_ALL, 'nl_NL')
 from rdflib import Graph
 import sys
 from saxonche import PySaxonProcessor

@@ -15,7 +15,7 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
     volumes:
-      - ./index:/usr/share/elasticsearch/data
+      - ./index/Users/menzowi/Documents/GitHub/niod-dre-yugo-browser/index:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
       - 9300:9300
@@ -38,3 +38,11 @@ services:
       context: ./browser
     ports:
       - '5050:5000'
+
+  yugo-indexer:
+    build:
+      context: ./indexer
+    volumes:
+      - /Users/menzowi/Documents/GitHub/niod-dre-yugo-editor/data:/data
+    networks:
+      - index_network

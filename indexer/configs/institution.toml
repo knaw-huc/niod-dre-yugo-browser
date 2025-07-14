@@ -1,5 +1,5 @@
 [index]
-host="http://localhost:9200/"
+host="http://elastic:9200/"
 name="niod-yugo-institution"
 full_text="yes"
 
