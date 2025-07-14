@@ -620,3 +620,50 @@ margin-bottom: 20px;
 .hcBrandLogo {
     background-color: #fff;
 }
+
+.parallelForms {
+}
+
+.otherForms {
+
+}
+
+.lang {
+    font-size:smaller;
+}
+
+.lang::before {
+    content: " (";
+}
+
+.lang::after {
+    content: ")";
+}
+
+.type {
+}
+
+.type::before {
+    content: " (";
+}
+
+.type::after {
+    content: ")";
+}
+
+.ent {
+    font-size:smaller;
+}
+
+.ent::before {
+    content: " (";
+}
+
+.ent::after {
+    content: ")";
+}
+
+a.rel {
+    font-weight: normal;
+    text-decoration: underline;
+}
