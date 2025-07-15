@@ -31,8 +31,8 @@ services:
       context: ./browser
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.sd-alpha-editor.entrypoints=http"
-      - "traefik.http.routers.sd-alpha-editor.rule=Host(`alpha-browser.sd.di.huc.knaw.nl`)"
+      - "traefik.http.routers.sd-alpha-browser.entrypoints=http"
+      - "traefik.http.routers.sd-alpha-browser.rule=Host(`alpha-browser.sd.di.huc.knaw.nl`)"
     ports:
       - '5050:5000'
 
