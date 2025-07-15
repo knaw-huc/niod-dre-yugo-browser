@@ -1,6 +1,6 @@
 
 [index]
-host="http://elastic:9200/"
+host="https://195.169.89.231:9200/"
 name="niod-yugo-place"
 full_text="yes"
 
