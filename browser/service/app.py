@@ -10,7 +10,7 @@ app = Flask(__name__, static_folder='browser', static_url_path='')
 CORS(app)
 
 config = {
-    "url" : os.getenv("ES_URI", "http://localhost"),
+    "url" : os.getenv("ES_URI", "https://195.169.89.231"),
     "port" : os.getenv("ES_PORT ", "9200"),
     "editor" : os.getenv("CCF_URI", "https://alpha-editor.sd.di.huc.knaw.nl"),
     "token": os.getenv("CCF_API_TOKEN", "foobar")
