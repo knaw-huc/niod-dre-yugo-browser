@@ -12,7 +12,7 @@ CORS(app)
 config = {
     "url" : os.getenv("ES_URI", "http://localhost"),
     "port" : os.getenv("ES_PORT ", "9200"),
-    "editor" : os.getenv("CCF_URI", "http://host.docker.internal:1211"),
+    "editor" : os.getenv("CCF_URI", "https://alpha-editor.sd.di.huc.knaw.nl"),
     "token": os.getenv("CCF_API_TOKEN", "foobar")
 }
 
