@@ -29,16 +29,16 @@ services:
   yugo-browser:
     build:
       context: ./browser
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.sd-alpha-editor.entrypoints=http"
+      - "traefik.http.routers.sd-alpha-editor.rule=Host(`alpha-browser.sd.di.huc.knaw.nl`)"
     ports:
       - '5050:5000'
 
   yugo-indexer:
     build:
       context: ./indexer
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.sd-alpha-editor.entrypoints=http"
-      - "traefik.http.routers.sd-alpha-editor.rule=Host(`alpha-browser.sd.di.huc.knaw.nl`)"
     volumes:
       - sd-alpha-browser-apps:/data/apps
     networks:
