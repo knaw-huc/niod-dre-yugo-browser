@@ -264,7 +264,7 @@ def main():
     if 'host' in config['index']:
         host = config['index']['host']
 
-    indexer = Indexer(Elasticsearch(hosts=host), config, index)
+    indexer = Indexer(Elasticsearch(hosts=host, verify_certs=False), config, index)
 
     indexer.create_mapping(overwrite=args['force'])
     indexer.import_files(input_list)

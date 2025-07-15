@@ -8,7 +8,7 @@ import math
 class Index:
     def __init__(self, config):
         self.config = config
-        self.client = Elasticsearch(hosts="http://host.docker.internal:9200/")
+        self.client = Elasticsearch(hosts="https://195.169.89.231:9200/", verify_certs=False)
         #self.client = Elasticsearch()
 
     def no_case(self, str_in):
