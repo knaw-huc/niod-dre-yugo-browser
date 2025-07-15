@@ -41,12 +41,13 @@ services:
       - "traefik.http.routers.sd-alpha-editor.rule=Host(`alpha-browser.sd.di.huc.knaw.nl`)"
     volumes:
 #      - /Users/menzowi/Documents/GitHub/niod-dre-yugo-editor/data:/data
-      - sd-alpha-editor-apps:/data/apps
+      - sd-alpha-browser-apps:/data/apps
     networks:
       - traefik-public
 
 volumes:
-  sd-alpha-editor-apps:
+  sd-alpha-browser-apps:
+    external: true
 
 networks:
   traefik-public:
