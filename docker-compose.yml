@@ -10,8 +10,8 @@ services:
     volumes:
       - ./index/Users/menzowi/Documents/GitHub/niod-dre-yugo-browser/index:/usr/share/elasticsearch/data
     ports:
-      - 9200:9200
-      - 9300:9300
+      - 9220:9200
+      - 9330:9300
     networks:
       - traefik-public
 
