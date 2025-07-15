@@ -1,0 +1,53 @@
+version: '2'
+
+services:
+
+  elastic:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.10.4
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    volumes:
+      - ./index/Users/menzowi/Documents/GitHub/niod-dre-yugo-browser/index:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - traefik-public
+
+  # kibana:
+  #     image: docker.elastic.co/kibana/kibana:8.10.4
+  #     environment:
+  #       ELASTICSEARCH_URL: http://elastic:9200
+  #       ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'    
+  #     ports:
+  #       - 5601:5601 
+  #     networks:
+  #       - index_network
+
+
+  yugo-browser:
+    build:
+      context: ./browser
+    ports:
+      - '5050:5000'
+
+  yugo-indexer:
+    build:
+      context: ./indexer
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.sd-alpha-editor.entrypoints=http"
+      - "traefik.http.routers.sd-alpha-editor.rule=Host(`alpha-browser.sd.di.huc.knaw.nl`)"
+    volumes:
+#      - /Users/menzowi/Documents/GitHub/niod-dre-yugo-editor/data:/data
+      - sd-alpha-editor-apps:/data/apps
+    networks:
+      - traefik-public
+
+  volumes:
+    sd-alpha-editor-apps:
+
+networks:
+  traefik-public:
+    external: true
