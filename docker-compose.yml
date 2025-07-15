@@ -36,6 +36,8 @@ services:
       - "traefik.http.routers.sd-alpha-browser.rule=Host(`alpha-browser.sd.di.huc.knaw.nl`)"
     ports:
       - '5050:5000'
+    networks:
+      - traefik-public
 
   yugo-indexer:
     build:
