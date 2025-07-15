@@ -25,7 +25,7 @@ export function Header() {
                         <div onClick={() => {nav('/places')}}>Places</div>
                         <div onClick={() => {nav('/events')}}>Events</div>
                         <div onClick={() => {nav('/about')}}>About</div>
-                        <div><Link to='mailto:resources@huygens.knaw.nl'>Contact</Link></div>
+                        <div><Link to='mailto:structured-data@di.huc.knaw.nl'>Contact</Link></div>
                     </div>
                 </header>
             </div>
