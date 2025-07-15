@@ -8,7 +8,7 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
     volumes:
-      - ./index/Users/menzowi/Documents/GitHub/niod-dre-yugo-browser/index:/usr/share/elasticsearch/data
+      - sd-alpha-browser-index:/usr/share/elasticsearch/data
     ports:
       - 9220:9200
       - 9330:9300
@@ -46,6 +46,7 @@ services:
       - traefik-public
 
 volumes:
+  sd-alpha-browser-index:
   sd-alpha-browser-apps:
     external: true
 
