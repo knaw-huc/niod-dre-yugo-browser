@@ -45,8 +45,8 @@ services:
     networks:
       - traefik-public
 
-  volumes:
-    sd-alpha-editor-apps:
+volumes:
+  sd-alpha-editor-apps:
 
 networks:
   traefik-public:
