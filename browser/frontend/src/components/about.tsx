@@ -5,25 +5,10 @@ export default function About() {
     <div className="hcContentContainer hcMarginTop5 hcMarginBottom5">
         <div className="hcBasicSideMargin">
             <h1>About</h1>
-            <div className="hcParagraph">If one examines surrealism, one is faced with a choice: either reject
-                cultural nihilism or conclude that language is fundamentally meaningless, given
-                that reality is equal to art. Thus, the subject is interpolated into a
-                Foucaultist power relations that includes language as a paradox. </div>
-            <div className="hcParagraph">The primary theme of the works of Gaiman is the role of the participant as
-                poet. Sontag uses the term ‘pretextual deappropriation’ to denote a
-                mythopoetical reality. However, the premise of Foucaultist power relations
-                implies that sexual identity, perhaps surprisingly, has significance. </div>
-            <div className="hcParagraph">The subject is contextualised into a surrealism that includes consciousness
-                as a whole. In a sense, the main theme of Long’s analysis
-                of Foucaultist power relations is the role of the participant as observer. </div>
-            <div className="hcParagraph">The subject is interpolated into a surrealism that includes narrativity as a
-                reality. It could be said that Lyotard suggests the use of Foucaultist power
-                relations to challenge sexism. </div>
-            <div className="hcParagraph">Bataille’s model of the dialectic paradigm of discourse states that the
-                collective is capable of truth. But if the prematerial paradigm of reality
-                holds, we have to choose between Foucaultist power relations and posttextual
-                discourse. </div>
-
+            <div className="hcParagraph">Between March 2024 and September 2025, the NIOD Institute for War, Holocaust and Genocide Studies embarked on a pilot project to develop a feasibility study for a digital research environment (DRE) for the 1990s wars in the former Yugoslavia. The DRE was conceptualized as an open access, online based platform, which would gather in one place information about the existing archival collections relevant to the research of the Yugoslav wars, as well as establish a scholarly and institutional network that advances research of the archives of or about Yugoslav Wars. The main problem this pilot was set up to address was the relative lack of findability and accessibility of the archival information about the wars, including the collections created during the operation of the International Criminal Tribunal for the former Yugoslavia (ICTY) and its successor, the International Residual Mechanism for Criminal Tribunals (IRMCT).</div>
+            <div className="hcParagraph">The Yugoslav wars, occurring over one decade between 1991 and 2001, affecting some 20 million people in seven countries and with involvement of two major international military organisations (UN Protection force and NATO alliance), have been well documented in millions of objects, photos, videos, judicial records, letters, photos, videos, audio recordings, diaries, announcements, newspapers and much more. However, the sources are scattered over dozens of organisations and communities, there is lack of clarity about the rules of accessibility to the physical documents and what information may be accessible in digital form, there are language barriers, metadata is missing, while catalogues and finding aids exist only partly.</div>
+            <div className="hcParagraph">Over the course of the DRE pilot project, the NIOD team identified a number of challenges that would face future researchers of Yugoslav wars in their search for the archival records and developed several possible solutions for addressing these challenges. For example, the team developed methodology for an archival description of the judicial record created during the work of the ICTY and IRMCT, which would significantly increase user friendliness and findability in these important collections. In addition, the team carried out initial research related to the sample case of the war in Croatia (1991-1995) and pinpointed the major gaps in the information available about the archival collections related to this conflict, as well as the possible solutions.</div>
+            <div className="hcParagraph">The work on controlled dictionaries and a thesaurus based on the available archival collections showed the potential of enhancing the archival metadata and enriching the user experience. This was confirmed in a series of interviews, workshops, seminars and public events, organized in collaboration with the NIOD research department, which gathered the future users of the platform and benefited from their input regarding the main aspects of the pilot project and the ideas explored therein. These meetings also created a basis for the future network of scholars, educators and students with an interest in research of different aspects of the wars in the former Yugoslavia.</div>
         </div>
     </div>);
 }
