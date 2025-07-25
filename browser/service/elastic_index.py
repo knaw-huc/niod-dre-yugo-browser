@@ -192,7 +192,7 @@ class Index:
             "query": query,
             "size": length,
             "from": start,
-            "_source": ["person_id", "name", "authorisedForm", "history"],
+            "_source": ["person_id", "name", "authorisedForm", "history", "person", "group", "event", "place"],
             "sort": [
                 {"authorisedForm.keyword": {"order": "asc"}}
             ]
@@ -221,7 +221,7 @@ class Index:
             "query": query,
             "size": length,
             "from": start,
-            "_source": ["group_id", "name", "authorisedForm", "history", "type"],
+            "_source": ["group_id", "name", "authorisedForm", "history", "type", "person", "group", "event", "place"],
             "sort": [
                 {"authorisedForm.keyword": {"order": "asc"}}
             ]
@@ -250,7 +250,7 @@ class Index:
             "query": query,
             "size": length,
             "from": start,
-            "_source": ["place_id", "name", "authorisedForm", "descr"],
+            "_source": ["place_id", "name", "authorisedForm", "descr", "person", "group", "event", "place"],
             "sort": [
                 {"authorisedForm.keyword": {"order": "asc"}}
             ]
@@ -279,7 +279,7 @@ class Index:
             "query": query,
             "size": length,
             "from": start,
-            "_source": ["event_id", "name", "authorisedForm", "history", "type"],
+            "_source": ["event_id", "name", "authorisedForm", "history", "type", "person", "group", "event", "place"],
             "sort": [
                 {"authorisedForm.keyword": {"order": "asc"}}
             ]
