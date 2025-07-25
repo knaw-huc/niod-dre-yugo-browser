@@ -66,5 +66,15 @@ export default function EventFacets({registerFacet, unregisterFacet, setFacet, s
                    addFilter={true}
                    usePost={true}
                    searchValues={searchValues}/>
+        <ListFacet registerFacet={registerFacet}
+                   unregisterFacet={unregisterFacet}
+                   setFacet={setFacet}
+                   name="Subject"
+                   field="subject"
+                   url={FACET_URL + "event_facet"}
+                   flex={true}
+                   addFilter={true}
+                   usePost={true}
+                   searchValues={searchValues}/>
     </>;
 }

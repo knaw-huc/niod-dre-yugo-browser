@@ -58,3 +58,8 @@ cardinality="list"
 path="distinct-values(doc('http://host.docker.internal:1211/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='event'])]/*[@ent='place']/@title/normalize-space(.))"
 type="text"
 cardinality="list"
+
+[index.facet.subject]
+path="/cmd:CMD/cmd:Components/cmdp:Event/cmdp:Subject/cmdp:thesaurusSubject/normalize-space(.)"
+type="text"
+cardinality="list"
