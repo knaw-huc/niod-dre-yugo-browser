@@ -134,7 +134,7 @@ class Index:
             "query": query,
             "size": length,
             "from": start,
-            "_source": ["institution_id", "name", "authorisedForm"],
+            "_source": ["institution_id", "name", "authorisedForm", "history", "country"],
             "sort": [
                 {"authorisedForm.keyword": {"order": "asc"}}
             ]

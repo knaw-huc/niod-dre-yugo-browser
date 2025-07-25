@@ -8,7 +8,8 @@ export interface IInstitutionResult {
     institution_id: string,
     type: string,
     name: string,
-    authorisedForm: string
+    authorisedForm: string,
+    history: string
 }
 
 export interface IInstitutionDetails {
