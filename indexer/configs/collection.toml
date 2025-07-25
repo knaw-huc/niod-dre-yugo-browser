@@ -47,3 +47,13 @@ cardinality="single"
 path="doc('http://host.docker.internal:1211/app/yugo/action/graph')//collectionHierarchy//collection[@id=$id]/ancestor::institution/@title/string()"
 type="text"
 cardinality="single"
+
+[index.facet.subject]
+path="/cmd:CMD/cmd:Components/cmdp:Collection/cmdp:Subject/cmdp:thesaurusSubject/normalize-space(.)"
+type="text"
+cardinality="list"
+
+[index.facet.lang]
+path="/cmd:CMD/cmd:Components/cmdp:Collection/cmdp:ConditionsOfAccessAndUseArea/cmdp:languageOfMaterial/normalize-space(.)"
+type="text"
+cardinality="list"

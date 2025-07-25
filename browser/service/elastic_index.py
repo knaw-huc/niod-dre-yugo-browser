@@ -163,7 +163,7 @@ class Index:
             "query": query,
             "size": length,
             "from": start,
-            "_source": ["collection_id", "name", "authorisedForm", "scope", "level", "type", "institution"],
+            "_source": ["collection_id", "name", "authorisedForm", "scope", "level", "type", "institution", "subject", "lang"],
             "sort": [
                 {"authorisedForm.keyword": {"order": "asc"}}
             ]
