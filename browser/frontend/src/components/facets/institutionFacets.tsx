@@ -26,5 +26,15 @@ export default function InstitutionFacets({registerFacet, unregisterFacet, setFa
                    addFilter={true}
                    usePost={true}
                    searchValues={searchValues}/>
+        <ListFacet registerFacet={registerFacet}
+                   unregisterFacet={unregisterFacet}
+                   setFacet={setFacet}
+                   name="Country"
+                   field="country"
+                   url={FACET_URL + "institution_facet"}
+                   flex={true}
+                   addFilter={true}
+                   usePost={true}
+                   searchValues={searchValues}/>
     </>;
 }

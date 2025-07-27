@@ -19,17 +19,29 @@ type="number"
 cardinality="single"
 
 [index.facet.type]
-path="string(//cmd:CMD/cmd:Components/cmdp:CollectionHoldingInstitution/cmdp:Identification/cmdp:type)"
+path="normalize-space(//cmd:CMD/cmd:Components/cmdp:CollectionHoldingInstitution/cmdp:Identification/cmdp:type)"
 type="text"
 cardinality="single"
 
 [index.facet.name]
-path="/cmd:CMD/cmd:Components/cmdp:CollectionHoldingInstitution/cmdp:Identification/cmdp:Names/(cmdp:authorisedForm,cmdp:parallelForms,cmdp:otherForms)/string()"
+path="/cmd:CMD/cmd:Components/cmdp:CollectionHoldingInstitution/cmdp:Identification/cmdp:Names/(cmdp:authorisedForm,cmdp:parallelForms,cmdp:otherForms)/normalize-space(.)"
 type="text"
 cardinality="list"
 
 [index.facet.authorisedForm]
-path="string(/cmd:CMD/cmd:Components/cmdp:CollectionHoldingInstitution/cmdp:Identification/cmdp:Names/(cmdp:authorisedForm[@xml:lang='en'],cmdp:authorisedForm)[1])"
+path="normalize-space(/cmd:CMD/cmd:Components/cmdp:CollectionHoldingInstitution/cmdp:Identification/cmdp:Names/(cmdp:authorisedForm[@xml:lang='en'],cmdp:authorisedForm)[1])"
 type="text"
 cardinality="single"
+
+[index.facet.history]
+path="normalize-space(/cmd:CMD/cmd:Components/cmdp:CollectionHoldingInstitution/cmdp:CollectionHoldingInstitutionDescriptionArea/(cmdp:history[@xml:lang='en'],cmdp:history)[1])"
+type="text"
+cardinality="single"
+
+[index.facet.country]
+path="normalize-space(/cmd:CMD/cmd:Components/cmdp:CollectionHoldingInstitution/cmdp:CollectionHoldingInstitutionContactArea/(cmdp:country[@xml:lang='en'],cmdp:country)[1])"
+type="text"
+cardinality="single"
+
+
 

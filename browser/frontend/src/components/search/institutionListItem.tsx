@@ -10,6 +10,7 @@ export default function InstitutionListItem({item}: { item: IInstitutionResult }
     return (
         <div className="hcResultListDetail">
             <h2><Link to={'/institution_detail/' + item.institution_id}>{item.authorisedForm}</Link></h2>
+            <div>{item.history}</div>
         </div>
     );
 }
