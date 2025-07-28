@@ -63,3 +63,9 @@ cardinality="list"
 path="/cmd:CMD/cmd:Components/cmdp:Event/cmdp:Subject/cmdp:thesaurusSubject/normalize-space(.)"
 type="text"
 cardinality="list"
+
+[index.facet.year]
+path="number(replace(/cmd:CMD/cmd:Components/cmdp:Event/cmdp:EventDescriptionArea/cmdp:Date/cmdp:dateStart,'.*(\\d\\d\\d\\d).*','$1')) cast as xs:int to number(replace(/cmd:CMD/cmd:Components/cmdp:Event/cmdp:EventDescriptionArea/cmdp:Date/cmdp:dateEnd,'.*(\\d\\d\\d\\d).*','$1')) cast as xs:int"
+type="number"
+cardinality="list"
+

@@ -76,5 +76,12 @@ export default function EventFacets({registerFacet, unregisterFacet, setFacet, s
                    addFilter={true}
                    usePost={true}
                    searchValues={searchValues}/>
+        <SliderFacet registerFacet={registerFacet}
+                   unregisterFacet={unregisterFacet}
+                   setFacet={setFacet}
+                   name="Year"
+                   field="year"
+                   min={1990}
+                   max={2000}/>
     </>;
 }
