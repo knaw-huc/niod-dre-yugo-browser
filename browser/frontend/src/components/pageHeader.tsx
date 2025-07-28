@@ -21,7 +21,7 @@ export function Header() {
                         <div onClick={() => {nav('/institutions')}}>Institutions</div>
                         <div onClick={() => {nav('/collections')}}>Collections</div>
                         <div onClick={() => {nav('/persons')}}>Persons</div>
-                        <div onClick={() => {nav('/groups')}}>Groups</div>
+                        <div onClick={() => {nav('/groups')}}>Organisations</div>
                         <div onClick={() => {nav('/places')}}>Places</div>
                         <div onClick={() => {nav('/events')}}>Events</div>
                         <div onClick={() => {nav('/about')}}>About</div>
