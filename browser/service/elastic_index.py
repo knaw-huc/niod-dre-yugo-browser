@@ -279,7 +279,7 @@ class Index:
             "query": query,
             "size": length,
             "from": start,
-            "_source": ["event_id", "name", "authorisedForm", "history", "type", "person", "group", "event", "place", "subject"],
+            "_source": ["event_id", "name", "authorisedForm", "history", "type", "person", "group", "event", "place", "subject", "year"],
             "sort": [
                 {"authorisedForm.keyword": {"order": "asc"}}
             ]
