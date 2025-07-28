@@ -4,7 +4,7 @@ import {FACET_URL} from "../../misc/config";
 
 export default function GroupFacets({registerFacet, unregisterFacet, setFacet, searchValues}: FacetsParams) {
     return <>
-        <h2>Groups</h2>
+        <h2>Organisations</h2>
         <FreeTextFacet registerFacet={registerFacet} unregisterFacet={unregisterFacet} setFacet={setFacet}/>
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}

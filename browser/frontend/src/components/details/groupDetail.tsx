@@ -23,7 +23,7 @@ export default function GroupDetail({data}: {data: IGroupDetailResult}) {
                             <div dangerouslySetInnerHTML={{ __html: mySafeHTML }} />
                             </div>
                         ) : (
-                            <h1>Group not found!</h1>
+                            <h1>Organisation not found!</h1>
                         )}
                         <div className="hcClickable" onClick={() => {nav(-1)}}>Back </div>
                     </div>
