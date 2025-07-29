@@ -35,21 +35,21 @@ type="text"
 cardinality="single"
 
 [index.facet.person]
-path="distinct-values(doc('http://host.docker.internal:1211/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='place'])]/*[@ent='person']/@title/normalize-space(.))"
+path="distinct-values(doc('https://alpha-editor.sd.di.huc.knaw.nl/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='place'])]/*[@ent='person']/@title/normalize-space(.))"
 type="text"
 cardinality="list"
 
 [index.facet.group]
-path="distinct-values(doc('http://host.docker.internal:1211/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='place'])]/*[@ent='group']/@title/normalize-space(.))"
+path="distinct-values(doc('https://alpha-editor.sd.di.huc.knaw.nl/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='place'])]/*[@ent='group']/@title/normalize-space(.))"
 type="text"
 cardinality="list"
 
 [index.facet.event]
-path="distinct-values(doc('http://host.docker.internal:1211/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='place'])]/*[@ent='event']/@title/normalize-space(.))"
+path="distinct-values(doc('https://alpha-editor.sd.di.huc.knaw.nl/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='place'])]/*[@ent='event']/@title/normalize-space(.))"
 type="text"
 cardinality="list"
 
 [index.facet.place]
-path="distinct-values(doc('http://host.docker.internal:1211/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='place'])]/*[@id!=$id][@ent='place']/@title/normalize-space(.))"
+path="distinct-values(doc('https://alpha-editor.sd.di.huc.knaw.nl/app/yugo/action/graph')//edge[exists(*[@id=$id][@ent='place'])]/*[@id!=$id][@ent='place']/@title/normalize-space(.))"
 type="text"
 cardinality="list"
