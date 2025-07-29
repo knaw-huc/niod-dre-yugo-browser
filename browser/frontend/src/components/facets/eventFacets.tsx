@@ -39,7 +39,7 @@ export default function EventFacets({registerFacet, unregisterFacet, setFacet, s
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
                    setFacet={setFacet}
-                   name="Group"
+                   name="Organisation"
                    field="group"
                    url={FACET_URL + "event_facet"}
                    flex={true}
@@ -49,7 +49,7 @@ export default function EventFacets({registerFacet, unregisterFacet, setFacet, s
          <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
                    setFacet={setFacet}
-                   name="Event"
+                   name="Related event"
                    field="event"
                    url={FACET_URL + "event_facet"}
                    flex={true}

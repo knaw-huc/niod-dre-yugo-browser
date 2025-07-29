@@ -29,7 +29,7 @@ export default function PlaceFacets({registerFacet, unregisterFacet, setFacet, s
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
                    setFacet={setFacet}
-                   name="Group"
+                   name="Organisation"
                    field="group"
                    url={FACET_URL + "place_facet"}
                    flex={true}
@@ -49,7 +49,7 @@ export default function PlaceFacets({registerFacet, unregisterFacet, setFacet, s
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
                    setFacet={setFacet}
-                   name="Place"
+                   name="Related place"
                    field="place"
                    url={FACET_URL + "place_facet"}
                    flex={true}

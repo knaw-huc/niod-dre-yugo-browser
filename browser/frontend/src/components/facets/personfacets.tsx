@@ -19,7 +19,7 @@ export default function PersonFacets({registerFacet, unregisterFacet, setFacet, 
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
                    setFacet={setFacet}
-                   name="Person"
+                   name="Related person"
                    field="person"
                    url={FACET_URL + "person_facet"}
                    flex={true}
@@ -29,7 +29,7 @@ export default function PersonFacets({registerFacet, unregisterFacet, setFacet, 
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
                    setFacet={setFacet}
-                   name="Group"
+                   name="Organisation"
                    field="group"
                    url={FACET_URL + "person_facet"}
                    flex={true}

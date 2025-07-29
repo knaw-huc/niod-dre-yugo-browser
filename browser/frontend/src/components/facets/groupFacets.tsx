@@ -39,7 +39,7 @@ export default function GroupFacets({registerFacet, unregisterFacet, setFacet, s
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
                    setFacet={setFacet}
-                   name="Group"
+                   name="Related organisation"
                    field="group"
                    url={FACET_URL + "group_facet"}
                    flex={true}
