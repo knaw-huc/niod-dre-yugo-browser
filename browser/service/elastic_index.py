@@ -8,8 +8,9 @@ import math
 class Index:
     def __init__(self, config):
         self.config = config
-        self.client = Elasticsearch(hosts="http://host.docker.internal:9200/")
-        #self.client = Elasticsearch()
+        host=os.getenv("ES_URL", "http://localhost:9200/")
+        print(f"HOST[{host}]")
+        self.client = Elasticsearch(hosts=host,verify_certs=False)
 
     def no_case(self, str_in):
         str = str_in.strip()
